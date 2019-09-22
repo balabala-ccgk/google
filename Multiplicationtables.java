@@ -4,7 +4,7 @@
 * Date:        2019-9-22
 */
 public class Multiplicationtables{
-	/**
+    /**
     * Description: Multiplication tables
     * param:       [null]
     * return:      [null]
@@ -12,7 +12,7 @@ public class Multiplicationtables{
     */  
 	public static void main(String[] args){
 		int i,j,k,z;
-        i = 9; 
+                i = 9; 
 		j = 1;
 		z = 1;
 		while(i >= 1){
@@ -26,17 +26,11 @@ public class Multiplicationtables{
                             System.out.print("  ");	
                             j++;				
 			}
-		i--;	
-		z++;
-		j = z;
-		System.out.print("\n");	
-		}
-		 
-		
-		
-		
-		
-		
+		        i--;	
+		        z++;
+		        j = z;
+		        System.out.print("\n");	
+		}	
 	}
 	
 	
