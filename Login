@@ -1,0 +1,56 @@
+/**
+ * 
+ */
+package com.google.src;
+
+/**
+ * @author 啦啦啦
+ * @data   2019.10.9
+ */
+public class User {
+   private String username;
+   private String userpassword;
+    
+   public String getUsername() {
+		return username;
+	}
+	
+   public void setUsername(String username) {
+		this.username = username;
+	}
+	
+   public String getUserpassword() {
+		return userpassword;
+	}
+	
+   public void setUserpassword(String userpassword) {
+		this.userpassword = userpassword;
+	}
+
+}
+
+
+
+
+
+
+
+
+/* 文件名 : NameOfInterface.java */
+
+import java.lang.*;
+//引入包
+
+
+public interface UserSerbice {
+   //任何类型 final, static 字段
+   //抽象方法
+   
+   
+   public int login(User user);
+   
+   
+   public int register(User user);
+   
+   
+}
