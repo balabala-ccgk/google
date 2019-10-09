@@ -54,3 +54,31 @@ public interface UserSerbice {
    
    
 }
+
+
+
+
+import java.util.Scanner;
+public static main (String[] args){
+   int result;
+   System.out.println("Please make the choose below:1 login, 4 exit");
+   Scanner scanner = new Scanner(System.in);
+   
+   switch(choose){
+   
+   case 1:
+    User user = new User();
+	System.out.println("Please input username:");
+	user.setUsername(scanner.next());
+	System.out.println("Please input password:");
+	user.setUserpassword(scanner.next());
+	result = userServiceImpl.login(user);
+	break;
+	
+	
+	
+   default:
+	System.out.println(result);
+	break;
+}
+}
