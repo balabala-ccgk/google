@@ -1,0 +1,64 @@
+package com.google.list;
+
+/**
+ * @program: List
+ * @Description: User
+ * @author: lalala
+ * @date: 2019.11.5
+ */
+
+public class User {
+    private String user;
+    private String passwoed;
+
+    public User(String user, String passwoed) {
+        this.user = user;
+        this.passwoed = passwoed;
+    }
+
+    public String getUser() {
+        return user;
+    }
+
+    public void setUser(String user) {
+        this.user = user;
+    }
+
+    public String getPasswoed() {
+        return passwoed;
+    }
+
+    public void setPasswoed(String passwoed) {
+        this.passwoed = passwoed;
+    }
+}
+
+
+
+
+package com.google.list;
+
+/**
+ * @program: List
+ * @Description: Store the data in the list
+ * @author: lalala
+ * @date: 2019.11.5
+ */
+
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+import java.util.List;
+
+public class Manager {
+    public static void main(String[] args){
+        User user1 = new User("A", "111");
+        User user2 = new User("B", "222");
+
+        List list = new ArrayList();
+        list.add(user1);
+        list.add(user2);
+
+        System.out.print(list.get(0).toString());
+        System.out.print(list.get(1).toString());
+    }
+}
